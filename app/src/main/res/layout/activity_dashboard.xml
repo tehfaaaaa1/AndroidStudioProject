@@ -86,7 +86,7 @@
             android:layout_height="wrap_content"
             android:text="New"
             android:textSize="26sp"
-            android:layout_marginHorizontal="74dp" />
+            android:layout_marginHorizontal="70dp" />
 
         <TextView
             android:layout_width="wrap_content"
