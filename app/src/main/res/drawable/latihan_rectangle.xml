@@ -6,7 +6,7 @@
             <corners android:topLeftRadius="235dp"
                 android:bottomLeftRadius="235dp"
                 />
-            <size android:width="50dp" android:height="80dp"/>
+            <size android:width="100dp" android:height="80dp"/>
         </shape>
     </item>
 </selector>
