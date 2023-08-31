@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BelajarAndroidActivity</string>
+    <string name="formulir_peminjaman_buku">Formulir Peminjaman Buku</string>
+    <string name="nama">Nama :</string>
+    <string name="masukkan_nama_anggota">Masukkan Nama Anggota</string>
+    <string name="kelas">Kelas :</string>
+    <string name="count">COUNT</string>
+    <string name="lorem_aja">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Curabitur gravida arcu ac tortor dignissim convallis. Felis eget nunc lobortis mattis aliquam faucibus purus in. Ut porttitor leo a diam sollicitudin. Augue interdum velit euismod in pellentesque massa. Rutrum quisque non tellus orci ac.</string>
+    <string name="cirno_fumo">Touhou Project Plush Toy Stuffed Doll Cirno Kunfund Figure Plushie Puppet ⑨ Fumo</string>
+</resources>
