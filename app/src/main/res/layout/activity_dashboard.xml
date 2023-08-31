@@ -65,6 +65,7 @@
         />
 
     <LinearLayout
+        android:id="@+id/select"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/garis"
@@ -92,6 +93,22 @@
             android:textSize="26sp" />
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/select"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/fumo"/>
 
+        </LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>
