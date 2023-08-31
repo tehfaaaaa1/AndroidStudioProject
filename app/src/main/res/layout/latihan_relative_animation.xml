@@ -178,7 +178,7 @@
         android:id="@+id/purchase"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:background="@drawable/latihan_rectangle"
+        android:background="@drawable/rounded_corners"
         android:backgroundTint="#F57C00"
         android:text="Purchase"
         android:textColor="@color/white"

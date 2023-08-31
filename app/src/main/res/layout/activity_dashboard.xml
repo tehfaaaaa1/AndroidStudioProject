@@ -102,11 +102,77 @@
         android:layout_marginHorizontal="20dp">
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/fumo"
+                android:background="@drawable/rounded_corners"
+                android:backgroundTint="#4690EA"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cirno Fumo Plush"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hot Toys"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$24.84"
+                    android:textColor="#4690EA"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/fumo"/>
+                android:src="@drawable/ganyu"
+                android:background="@drawable/rounded_corners"
+                android:backgroundTint="#4690EA"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ganyu Cocogoat Plush"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hot Toys"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$21.99"
+                    android:textColor="#4690EA"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
 
         </LinearLayout>
     </LinearLayout>
