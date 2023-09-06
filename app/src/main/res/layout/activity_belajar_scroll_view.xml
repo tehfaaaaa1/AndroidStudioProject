@@ -55,16 +55,16 @@
       android:layout_marginTop="20dp"
       android:layout_marginStart="30dp"/>
 
-  <TextView
-      android:id="@+id/textView"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_below="@id/tvBookTitle"
-      android:layout_marginStart="60dp"
-      android:layout_marginTop="20dp"
-      android:layout_toEndOf="@id/tvBookAuthor"
-      android:text="1k+ Reviews"
-      android:textSize="16sp" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBookTitle"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="-3dp"
+        android:layout_toEndOf="@id/tvBookAuthor"
+        android:text="1k+ Reviews"
+        android:textSize="16sp" />
 
     <RelativeLayout
         android:id="@+id/genre"
@@ -131,16 +131,14 @@
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_below="@id/tvSynopsis"
-        android:layout_marginHorizontal="20dp">
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp">
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            >
-
+            android:layout_height="wrap_content">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
                 android:text="@string/bookSynopsis"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
