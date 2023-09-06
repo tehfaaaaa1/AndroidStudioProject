@@ -23,26 +23,69 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ivDestination"
                 android:layout_centerHorizontal="true"
-                android:text="Switzerland"
+                android:text="Niesen"
                 android:textColor="@color/black"
                 android:textSize="30sp"
                 android:textStyle="bold" />
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/ic_baseline_favorite_24"
-                android:layout_below="@id/ivDestination"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="4dp"/>
             <TextView
+                android:id="@+id/tvDesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tvLocation"
-                android:text="@string/lorem_aja"
+                android:text="Amazing view can be enjoyed from above of refreshing city"
                 android:textSize="14sp"
                 android:textColor="@color/black"
                 android:layout_marginStart="15dp"/>
+            <ImageView
+                android:id="@+id/LocIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/baseline_location_on_24"
+                android:layout_above="@id/bTrip"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toEndOf="@id/LocIcon"
+                android:layout_above="@id/bTrip"
+                android:text="Switzerland"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/PriceIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_above="@id/bTrip"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toStartOf="@id/tvPrice"
+                android:src="@drawable/baseline_price_check_24" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/bTrip"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="16dp"
+                android:paddingEnd="20dp"
+                android:text="100$ / Package"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/bTrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Plan Trip Now"
+                android:textSize="16sp"/>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 </RelativeLayout>
