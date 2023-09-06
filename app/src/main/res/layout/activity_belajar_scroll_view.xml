@@ -8,12 +8,144 @@
     tools:context=".BelajarScrollViewActivity">
     <ImageView
         android:id="@+id/ivBookPic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="130dp"
+        android:layout_height="200dp"
         android:src="@drawable/meinkampf"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"/>
 
+    <TextView
+        android:id="@+id/tvBookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mein Kampf"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/ivBookPic"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/tvBookAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Raffa Galih"
+        android:textSize="16sp"
+        android:layout_below="@id/tvBookTitle"
+        android:layout_toEndOf="@id/ivBookPic"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_baseline_star_rate_24"
+        android:layout_toEndOf="@id/tvBookAuthor"
+        android:layout_below="@id/tvBookTitle"
+        android:layout_marginTop="21dp"
+        android:layout_marginStart="10dp"/>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="5.0"
+      android:textSize="16sp"
+      android:layout_below="@id/tvBookTitle"
+      android:layout_toEndOf="@id/tvBookAuthor"
+      android:layout_marginTop="20dp"
+      android:layout_marginStart="30dp"/>
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/tvBookTitle"
+      android:layout_marginStart="60dp"
+      android:layout_marginTop="20dp"
+      android:layout_toEndOf="@id/tvBookAuthor"
+      android:text="1k+ Reviews"
+      android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivBookPic"
+        android:layout_marginHorizontal="20dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/bluetextbg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Autobiography"
+                android:textSize="16sp"
+                android:textColor="@color/bluetext" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/bluetextbg"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Manifesto"
+                android:textSize="16sp"
+                android:textColor="@color/bluetext"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/bluetextbg"
+            android:layout_alignParentEnd="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Philosophy"
+                android:textSize="16sp"
+                android:textColor="@color/bluetext"/>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvSynopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/genre"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="Synopsis"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/tvSynopsis"
+        android:layout_marginHorizontal="20dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/bookSynopsis"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </ScrollView>
 
 
-  </RelativeLayout>
+</RelativeLayout>
