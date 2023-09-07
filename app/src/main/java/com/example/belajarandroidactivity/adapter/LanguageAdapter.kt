@@ -21,11 +21,11 @@ class LanguageAdapter (val data:ArrayList<Language>) : RecyclerView.Adapter<Lang
         return LanguageViewHolder(view)
     }
 
-    override fun getItemCount(): Int {
-        TODO("Not yet implemented")
-    }
+    override fun getItemCount(): Int = data.size
 
     override fun onBindViewHolder(holder: LanguageViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        val item = data.get(position)
+        holder.tvBahasa.text = item.name
+        holder.ivLogo.setImageResource(item.image)
     }
 }
