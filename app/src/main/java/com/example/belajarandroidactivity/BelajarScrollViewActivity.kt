@@ -14,7 +14,7 @@ class BelajarScrollViewActivity : AppCompatActivity() {
         ivBackground = findViewById(R.id.ivBg)
         Glide.with(this)
             .load(R.drawable.german)
-            .transform(BlurTransformation(25, 3))
+            .transform(BlurTransformation(10, 3))
             .into(ivBackground!!)
     }
 }

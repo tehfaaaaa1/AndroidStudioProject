@@ -30,7 +30,7 @@
         android:textStyle="bold"
         android:layout_toEndOf="@id/ivBookPic"
         android:layout_marginTop="80dp"
-        android:layout_marginStart="20dp"/>
+        android:layout_marginStart="16dp"/>
 
     <TextView
         android:id="@+id/tvBookAuthor"
@@ -42,7 +42,7 @@
         android:layout_below="@id/tvBookTitle"
         android:layout_toEndOf="@id/ivBookPic"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"/>
+        android:layout_marginStart="12dp"/>
 
     <ImageView
         android:layout_width="20dp"
@@ -51,7 +51,7 @@
         android:layout_toEndOf="@id/tvBookAuthor"
         android:layout_below="@id/tvBookTitle"
         android:layout_marginTop="21dp"
-        android:layout_marginStart="10dp"/>
+        android:layout_marginStart="4dp"/>
 
   <TextView
       android:layout_width="wrap_content"
@@ -62,14 +62,14 @@
       android:layout_below="@id/tvBookTitle"
       android:layout_toEndOf="@id/tvBookAuthor"
       android:layout_marginTop="20dp"
-      android:layout_marginStart="30dp"/>
+      android:layout_marginStart="25dp"/>
 
     <TextView
         android:id="@+id/rateReviews"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvBookTitle"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
         android:layout_toEndOf="@id/tvBookAuthor"
         android:text="8B+ Reviews"
@@ -188,7 +188,6 @@
                     android:layout_height="60dp"
                     android:src="@drawable/handsome"
                     android:scaleType="centerCrop"
-                    android:rotation="90"
                     />
             </androidx.cardview.widget.CardView>
             <TextView
@@ -215,7 +214,8 @@
                 android:layout_height="60dp"
                 app:cardCornerRadius="50dp"
                 android:layout_below="@id/reviewAvatar1"
-                android:layout_marginTop="30dp">
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp">
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"

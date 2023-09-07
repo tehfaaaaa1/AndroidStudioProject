@@ -22,13 +22,13 @@
         </activity>
         <activity
             android:name=".BelajarCardActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".BelajarRelativeActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".TravelActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".DetailActivity"
             android:exported="false" />
