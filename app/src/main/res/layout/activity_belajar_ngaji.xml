@@ -60,18 +60,24 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#ff9d2a">
+                android:backgroundTint="#ff9d2a"
+                app:cardCornerRadius="20dp">
                 <TextView
-                    android:layout_width="150dp"
+                    android:id="@+id/jDoa1"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:text="Dzikir & Do'a Sunnah Setelah Shalat"
-                    android:textSize="16sp"
-                    android:textColor="@color/white"/>
+                    android:text=""
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="30dp"/>
+
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/doa_harian2"
-                    />
+                    android:id="@+id/logoDoa1"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:src=""
+                    android:layout_gravity="end"/>
             </androidx.cardview.widget.CardView>
         </RelativeLayout>
     </ScrollView>
