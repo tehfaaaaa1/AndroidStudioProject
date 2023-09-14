@@ -7,12 +7,15 @@
     tools:context=".SplashScreenDoaAct"
     android:background="@color/orange">
 
-    <ImageView
+    <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/ivLogoSplash"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:src="@drawable/doa"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        app:lottie_rawRes="@raw/splash_logo"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        tools:ignore="ImageContrastCheck"/>
 
     <TextView
         android:id="@+id/tvTitleSplash"
