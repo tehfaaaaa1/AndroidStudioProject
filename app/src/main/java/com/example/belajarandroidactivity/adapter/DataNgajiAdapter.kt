@@ -7,9 +7,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.belajarandroidactivity.R
-import com.example.belajarandroidactivity.model.Language
+import com.example.belajarandroidactivity.model.DataNgaji
 
-class DataNgajiAdapter (val data:ArrayList<Language>) : RecyclerView.Adapter<DataNgajiAdapter.DataNgajiViewHolder>() {
+class DataNgajiAdapter(val data: ArrayList<DataNgaji>) : RecyclerView.Adapter<DataNgajiAdapter.DataNgajiViewHolder>() {
     class DataNgajiViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val tvJudul : TextView = view.findViewById(R.id.jDoa)
         val ivLogo: ImageView = view.findViewById(R.id.logoDoa)
@@ -25,7 +25,7 @@ class DataNgajiAdapter (val data:ArrayList<Language>) : RecyclerView.Adapter<Dat
 
     override fun onBindViewHolder(holder: DataNgajiViewHolder, position: Int) {
         val item = data.get(position)
-        holder.tvJudul.text = item.name
+        holder.tvJudul.text = item.judulDoa
         holder.ivLogo.setImageResource(item.image)
     }
 }

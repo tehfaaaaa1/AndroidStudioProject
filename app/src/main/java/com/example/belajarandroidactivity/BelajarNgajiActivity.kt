@@ -2,9 +2,9 @@ package com.example.belajarandroidactivity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
-import android.widget.ListView
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.belajarandroidactivity.adapter.DataNgajiAdapter
 import com.example.belajarandroidactivity.model.DataNgaji
 
 class BelajarNgajiActivity : AppCompatActivity() {
@@ -20,5 +20,10 @@ class BelajarNgajiActivity : AppCompatActivity() {
             DataNgaji("Dzikir Para Nabi", R.drawable.doa_harian2),
             DataNgaji("Dzikir Pagi & Petang", R.drawable.doa_harian2)
         )
+        val adapter = DataNgajiAdapter(listDoa)
+        val linearVertical = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+
+        rvListDoa.adapter = adapter
+        rvListDoa.layoutManager = linearVertical
     }
 }
