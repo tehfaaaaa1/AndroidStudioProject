@@ -37,7 +37,7 @@
         android:text="Pilihan Do'a dan Dzikir"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="#ff9d2a"
+        android:textColor="@color/orange"
         android:layout_below="@id/ivBackground"/>
     <Button
         android:layout_width="wrap_content"
@@ -46,7 +46,7 @@
         app:icon="@drawable/ic_baseline_keyboard_arrow_right_24"
         android:layout_below="@id/ivBackground"
         android:layout_alignParentEnd="true"
-        android:backgroundTint="#ff9d2a"
+        android:backgroundTint="@color/orange"
         android:layout_marginEnd="10dp"/>
     
     <ScrollView
