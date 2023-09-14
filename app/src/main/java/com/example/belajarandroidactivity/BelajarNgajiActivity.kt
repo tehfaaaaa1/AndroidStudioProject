@@ -14,7 +14,7 @@ class BelajarNgajiActivity : AppCompatActivity() {
 
         val rvListDoa : RecyclerView = findViewById(R.id.rvListDoa)
         val listDoa = arrayListOf<DataNgaji>(
-            DataNgaji("Dzikir &amp; Doa Sunnah Setelah Shalat", R.drawable.doa_harian2),
+            DataNgaji("Dzikir & Doa Sunnah Setelah Shalat", R.drawable.doa_harian2),
             DataNgaji("Dzikir Harian", R.drawable.doa_harian2),
             DataNgaji("Al Ma'tsurat", R.drawable.doa_harian2),
             DataNgaji("Dzikir Para Nabi", R.drawable.doa_harian2),

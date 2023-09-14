@@ -17,7 +17,7 @@ class DataNgajiAdapter(val data: ArrayList<DataNgaji>) : RecyclerView.Adapter<Da
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DataNgajiViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_bahasa_pemrograman,parent,false)
+            .inflate(R.layout.item_list_doa,parent,false)
         return DataNgajiViewHolder(view)
     }
 
