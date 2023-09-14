@@ -11,8 +11,8 @@ import com.example.belajarandroidactivity.model.Language
 
 class DataNgajiAdapter (val data:ArrayList<Language>) : RecyclerView.Adapter<DataNgajiAdapter.DataNgajiViewHolder>() {
     class DataNgajiViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val tvJudul : TextView = view.findViewById(R.id.jDoa1)
-        val ivLogo: ImageView = view.findViewById(R.id.logoDoa1)
+        val tvJudul : TextView = view.findViewById(R.id.jDoa)
+        val ivLogo: ImageView = view.findViewById(R.id.logoDoa)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DataNgajiViewHolder {
