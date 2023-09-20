@@ -1,13 +1,17 @@
 package com.example.belajarandroidactivity
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.belajarandroidactivity.adapter.DataNgajiAdapter
 import com.example.belajarandroidactivity.model.DataNgaji
 
 class BelajarNgajiActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_belajar_ngaji)
@@ -25,5 +29,12 @@ class BelajarNgajiActivity : AppCompatActivity() {
 
         rvListDoa.adapter = adapter
         rvListDoa.layoutManager = linearVertical
+
+        val btnKeDoa : Button = findViewById(R.id.btnKeDoa)
+
+        btnKeDoa.setOnClickListener {
+            val intent = Intent(this, DoaHarianAct::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -12,7 +12,7 @@
         android:theme="@style/Theme.BelajarAndroidActivity"
         tools:targetApi="31">
         <activity
-            android:name=".DoaHarianAct"
+            android:name=".SplashScreenDoaAct"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +24,7 @@
             android:name=".LatihanVisibility"
             android:exported="true" />
         <activity
-            android:name=".SplashScreenDoaAct"
+            android:name=".DoaHarianAct"
             android:exported="true" />
         <activity
             android:name=".BelajarNgajiActivity"
