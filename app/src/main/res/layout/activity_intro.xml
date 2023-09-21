@@ -18,13 +18,14 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="700dp"
+                android:layout_height="750dp"
                 android:background="@drawable/gradient_color_background">
 
                 <TextView
                     android:id="@+id/textView12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
                     android:text="Watch Videos in \nVirtual Reality"
                     android:textAlignment="center"
                     android:textColor="@color/white"
@@ -54,10 +55,43 @@
                     app:layout_constraintEnd_toEndOf="@+id/imageView5"
                     app:layout_constraintStart_toStartOf="@+id/imageView5"
                     app:layout_constraintTop_toTopOf="@+id/imageView5"
-                    app:shapeAppearanceOverlay="daud"
                     app:srcCompat="@drawable/woman"
                     app:strokeWidth="1dp"
-                    tools:shapeAppearanceOverlay="@style/roundedImageCorner" />
+                    app:shapeAppearanceOverlay="@style/roundedImageCorner" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Download and watch offline wherever you are"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#121111">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnEnter"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/btn_background"
+                    android:text="GET IN"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
