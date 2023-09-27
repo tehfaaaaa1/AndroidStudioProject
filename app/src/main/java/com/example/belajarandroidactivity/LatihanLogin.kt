@@ -36,7 +36,7 @@ class LatihanLogin : AppCompatActivity() {
                 builder.setTitle("Alert!")
                 builder.setMessage("Wrong Username or Password!")
                 builder.setPositiveButton("Ampun Bang \uD83D\uDE4F") {
-                    dialog,which->finish()
+                    dialog,which->
                 }
                 var alertDialog = builder.create()
                 alertDialog.show()
