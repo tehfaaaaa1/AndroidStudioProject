@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
 import org.w3c.dom.Text
 
 class LatihanLogin : AppCompatActivity() {
@@ -19,17 +20,26 @@ class LatihanLogin : AppCompatActivity() {
         var btnSubmit : Button = findViewById(R.id.button2)
         var salah : TextView = findViewById(R.id.tvWrong)
 
-        var username = inputUsername.text.toString()
-        var password = inputPassword.text.toString()
+        val username = "daud"
+        val password = "inkAja"
 
         btnSubmit.setOnClickListener {
-            if (username == "daud" && password == "inkAja") {
+            if (inputUsername.text.toString() == username &&
+                    inputPassword.text.toString() == password) {
                 val intent = Intent(this, DashboardStore::class.java)
                 startActivity(intent)
                 salah.visibility = View.GONE
             }
             else {
                 salah.visibility = View.VISIBLE
+                var builder = AlertDialog.Builder(this)
+                builder.setTitle("Alert!")
+                builder.setMessage("Wrong Username or Password!")
+                builder.setPositiveButton("Ampun Bang \uD83D\uDE4F") {
+                    dialog,which->finish()
+                }
+                var alertDialog = builder.create()
+                alertDialog.show()
             }
         }
     }
