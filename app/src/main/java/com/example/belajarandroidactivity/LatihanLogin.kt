@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import org.w3c.dom.Text
 
@@ -29,8 +30,16 @@ class LatihanLogin : AppCompatActivity() {
                 val intent = Intent(this, DashboardStore::class.java)
                 startActivity(intent)
                 salah.visibility = View.GONE
+
+                finish()
+            }
+            else if (inputUsername.text.toString().isEmpty()
+                || inputPassword.text.toString().isEmpty()) {
+                salah.text = "Username or password required."
+                salah.visibility = View.VISIBLE
             }
             else {
+                salah.text = "Wrong Username or Password.\nPlease try again."
                 salah.visibility = View.VISIBLE
                 var builder = AlertDialog.Builder(this)
                 builder.setTitle("Alert!")
